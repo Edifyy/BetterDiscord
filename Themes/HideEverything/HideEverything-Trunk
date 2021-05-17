@@ -1,0 +1,34 @@
+/**
+* @name HideEverything
+* @author Edify#0001
+* @description Lock you Out of Discord by hiding some HTML elements. It sets a new background with a nice png of the discord logo I found. I use https://betterdiscord.app/plugin/Zalgo to toggle it. After the keybind is setup change the visibility variable to hidden to make the theme functional.
+* @version 1.0
+*/
+
+/* Variables */
+:root {
+    --visiblity:  visible;
+    --hidden-image: url('https://i.pinimg.com/originals/7f/50/8b/7f508b142f3627f86bfb93ad183a6ebf.png');
+    --server-visiblity:  visible;
+    --message-notification-visibility: visible;
+}
+
+
+.app-1q1i1E {
+    visibility: var(--visiblity);
+}
+
+#app-mount {
+    background-image: var(--hidden-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 344px;
+}
+
+.pill-1z4sAY.wrapper-sa6paO {
+    visibility: var(--message-notification-visibility);
+}
+
+.blobContainer-pmnxKB {
+    visibility: var(--server-visiblity);
+}
