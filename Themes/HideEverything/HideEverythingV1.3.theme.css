@@ -1,0 +1,76 @@
+/**
+* @name HideEverything
+* @author Edify#0001
+* @description Lock you Out of Discord by hiding some HTML elements. It sets a new background with a nice png of the discord logo I found. I use https://betterdiscord.app/plugin/Zalgo to toggle it. After the keybind is setup change the visibility variable to hidden to make the theme functional.
+* @version 1.2
+*/
+
+/* Variables */
+:root {
+    --visiblity:  hidden;
+    --hidden-image: url('https://i.pinimg.com/originals/7f/50/8b/7f508b142f3627f86bfb93ad183a6ebf.png');
+    --server-visiblity:  visible;
+    --spotify-controls-visiblity:  visible;
+    --server-message-notification-visibility: visible;
+    --dm-message-notification-visibility: visible;
+    --dm-visiblity:  hidden;
+    --home-button-visiblity: hidden;
+}
+
+
+.app-1q1i1E {
+    visibility: var(--visiblity);
+}
+
+#app-mount {
+    background-image: var(--hidden-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 344px;
+}
+
+.pill-1z4sAY.wrapper-sa6paO {
+    visibility: var(--server-message-notification-visibility);
+}
+
+.pill-1Z5PKm.wrapper-sa6paO {
+    visibility: var(--dm-message-notification-visibility);
+}
+
+.blobContainer-pmnxKB {
+    visibility: var(--server-visiblity);
+}
+
+.listItemWrapper-KhRmzM {
+    visibility: var(--dm-visiblity);
+}
+
+.tutorialContainer-2sGCg9 .listItem-GuPuDH .listItemWrapper-KhRmzM{
+    visibility: var(--home-button-visiblity);
+}
+
+.container-6sXIoE.withTimeline-824fT_ {
+    visibility: var(--spotify-controls-visiblity);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+    width: 75vw;
+    max-height: 198px;
+    max-width: 341px;
+}
+
+.coverWrapper-YAplwJ.cursorPointer-1tw4YS {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    max-width: 237px;
+    max-height: 237px;
+}
+
+
+.container-6sXIoE.maximized-vv2Wr0.withTimeline-824fT_ {
+    bottom: 100px;
+}
