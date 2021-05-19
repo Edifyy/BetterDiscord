@@ -7,7 +7,7 @@
 
 /* Variables */
 :root {
-    --visiblity:  hidden;
+    --visiblity:  visible;
     --hidden-image: url('https://i.pinimg.com/originals/7f/50/8b/7f508b142f3627f86bfb93ad183a6ebf.png');
     --server-visiblity:  visible;
     --spotify-controls-visiblity:  visible;
